@@ -1,0 +1,17 @@
+import = [
+    "~/.config/alacritty/rose-pine.toml"
+]
+
+[window]
+startup_mode = "Maximized"
+
+[mouse]
+hide_when_typing = true
+
+[shell]
+program = "/bin/bash"
+args = [
+	"-l",
+	"-c",
+	"tmux attach || tmux",
+]

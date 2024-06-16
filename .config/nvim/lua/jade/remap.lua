@@ -1,5 +1,5 @@
 local builtin = require('telescope.builtin')
-local telescopeconf = require('isaac.telescope')
+local telescopeconf = require('jade.telescope')
 local harpoon = require("harpoon")
 
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex, {})
