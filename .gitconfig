@@ -1,0 +1,11 @@
+[user]
+	name = Jade Turner
+	email = spacey-sooty@proton.me
+[core]
+	editor = nvim
+[init]
+	defaultBranch = master
+[alias]
+    ac = commit -am
+[pull]
+	rebase = true
