@@ -57,8 +57,8 @@ bindsym $mod+Return exec $term
 bindsym $mod+q kill
 bindsym $mod+d exec $menu
 bindsym F2 exec pactl set-sink-mute @DEFAULT_SINK@ toggle
-bindsym F3 exec pactl set-sink-volume @DEFAULT_SINK@ +5%
-bindsym F4 exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym F3 exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym F4 exec pactl set-sink-volume @DEFAULT_SINK@ +5%
 bindsym F6 exec light -U 5.00
 bindsym F7 exec light -A 5.00
 floating_modifier $mod normal
@@ -87,7 +87,7 @@ bindsym $mod+1 workspace number "1:Terminal"
 bindsym $mod+2 workspace number "2:Browser"
 bindsym $mod+3 workspace number "3:Discord"
 bindsym $mod+4 workspace number "4:Spotify"
-bindsym $mod+5 workspace number 5
+bindsym $mod+5 workspace number "5:OnlyOffice"
 bindsym $mod+6 workspace number 6
 bindsym $mod+7 workspace number 7
 bindsym $mod+8 workspace number 8
@@ -172,7 +172,9 @@ bar {
 
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
-    status_command while date +'%Y-%m-%d %X'; do sleep 1; done
+    # status_command while date +'%Y-%m-%d %X'; do sleep 1; done
+    status_command while ~/.config/sway/status.sh; do sleep 1; done
+
 
     # colors {
         # statusline #ffffff
