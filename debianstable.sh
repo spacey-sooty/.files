@@ -16,7 +16,7 @@ sudo mv /tmp/onlyoffice.gpg /usr/share/keyrings/onlyoffice.gpg
 echo 'deb [signed-by=/usr/share/keyrings/onlyoffice.gpg] https://download.onlyoffice.com/repo/debian squeeze main' | sudo tee -a /etc/apt/sources.list.d/onlyoffice.list
 
 sudo apt update -y && sudo apt upgrade -y
-sudo apt install ripgrep tmux brave-browser onlyoffice-desktopeditors sway swaylock fonts-quicksand desktop-file-utils network-manager pulseaudio pipewire light -y
+sudo apt install ripgrep tmux brave-browser onlyoffice-desktopeditors sway swaylock fonts-quicksand desktop-file-utils network-manager pulseaudio pipewire light fonts-noto-color-emoji fonts-recommended jq grim slurp wl-clipboard imagemagick libnotify4 -y
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 curl -fsSL https://get.pnpm.io/install.sh | sh -

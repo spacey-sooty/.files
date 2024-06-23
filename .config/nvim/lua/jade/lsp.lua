@@ -8,17 +8,7 @@ lspconfig.clangd.setup({
     single_file_support = true,
 })
 
-lspconfig.dartls.setup({
-    capabilities = capabilities,
-    single_file_support = true,
-})
-
 lspconfig.cssls.setup({
-    capabilities = capabilities,
-    single_file_support = true,
-})
-
-lspconfig.hls.setup({
     capabilities = capabilities,
     single_file_support = true,
 })
@@ -38,11 +28,6 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
             root_dir = jdtls.setup.find_root({ "java-workspace" }),
         })
     end
-})
-
-lspconfig.zls.setup({
-    capabilities = capabilities,
-    single_file_support = true,
 })
 
 lspconfig.rust_analyzer.setup({
@@ -75,8 +60,12 @@ lspconfig.lua_ls.setup({
 })
 
 vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
-vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
-vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
+vim.keymap.set('n', '[d', function()
+    vim.diagnostic.jump({ count = -1 })
+end)
+vim.keymap.set('n', ']d', function()
+    vim.diagnostic.jump({ count = 1 })
+end)
 vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist)
 
 vim.api.nvim_create_autocmd('LspAttach', {
