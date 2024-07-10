@@ -15,3 +15,6 @@ args = [
 	"-c",
 	"tmux attach || tmux",
 ]
+
+[font]
+size = 20.0

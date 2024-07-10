@@ -20,6 +20,10 @@ echo 'deb [signed-by=/usr/share/keyrings/onlyoffice.gpg] https://download.onlyof
 
 sudo apt update -y && sudo apt upgrade -y
 sudo apt install ripgrep tmux brave-browser onlyoffice-desktopeditors spotify-client -y
+sudo apt autoremove --purge snapd
+sudo apt-mark hold snapd
+
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 curl -fsSL https://get.pnpm.io/install.sh | sh -

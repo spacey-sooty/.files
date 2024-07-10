@@ -15,18 +15,18 @@ local plugins = {
     {
         "rose-pine/neovim",
         name = "rose-pine",
-        config = function ()
-            vim.cmd.colorscheme("rose-pine")
+        config = function()
+            vim.cmd.colorscheme("rose-pine-moon")
         end
     },
     {
         "mfussenegger/nvim-jdtls",
     },
     {
-      "FabijanZulj/blame.nvim",
-      config = function()
-        require("blame").setup()
-      end
+        "FabijanZulj/blame.nvim",
+        config = function()
+            require("blame").setup()
+        end
     },
     {
         "ThePrimeagen/harpoon",
