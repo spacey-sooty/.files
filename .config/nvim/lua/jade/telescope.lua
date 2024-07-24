@@ -1,6 +1,8 @@
 local M = {}
 
 M.builtin = require('telescope.builtin')
+
+require("telescope").load_extension("git_worktree")
 require('telescope').load_extension('fzf')
 require('telescope').setup({
     defaults = {
