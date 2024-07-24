@@ -33,3 +33,8 @@ vim.keymap.set("n", "<leader>d", function() harpoon:list():select(1) end)
 vim.keymap.set("n", "<leader>f", function() harpoon:list():select(2) end)
 vim.keymap.set("n", "<leader>j", function() harpoon:list():select(3) end)
 vim.keymap.set("n", "<leader>k", function() harpoon:list():select(4) end)
+
+vim.keymap.set("n", "<leader>cd", function()
+    local input = vim.fn.input('Worktree > ')
+    require("git-worktree").switch_worktree(input)
+end)

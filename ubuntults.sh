@@ -5,6 +5,7 @@ ln -s ~/.files/.config/alacritty ~/.config/alacritty
 ln -s ~/.files/.gitconfig ~/.gitconfig
 
 echo "set -o vi" >> ~/.bashrc
+echo "export JAVA_HOME="/home/jade/wpilib/$(date +%Y)/jdk"" >> ~/.bashrc
 
 
 curl -sS https://download.spotify.com/debian/pubkey_6224F9941A8AA6D1.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg

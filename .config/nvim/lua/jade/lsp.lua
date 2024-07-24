@@ -13,6 +13,15 @@ lspconfig.cssls.setup({
     single_file_support = true,
 })
 
+lspconfig.tailwindcss.setup({
+    capabilities = capabilities,
+})
+
+lspconfig.gopls.setup({
+    capabilities = capabilities,
+    single_file_support = true,
+})
+
 lspconfig.tsserver.setup({
     capabilities = capabilities,
     single_file_support = true,
