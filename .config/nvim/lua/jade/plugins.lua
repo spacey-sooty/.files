@@ -101,6 +101,7 @@ local plugins = {
             worktree.setup({})
         end
     },
+    "tpope/vim-fugitive",
 }
 
 local opts = {}
