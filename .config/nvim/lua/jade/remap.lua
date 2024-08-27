@@ -17,6 +17,7 @@ vim.keymap.set('n', '<C-h>', '<CMD>TmuxNavigateLeft<cr>')
 vim.keymap.set('n', '<C-l>', '<CMD>TmuxNavigateRight<cr>')
 
 vim.keymap.set('n', '<leader>pf', builtin.find_files, {})
+vim.keymap.set('n', '<leader>pc', builtin.git_commits, {})
 vim.keymap.set('n', '<leader>pa', telescopeconf.find_all, {})
 vim.keymap.set('n', '<leader>pg', telescopeconf.project_files, {})
 vim.keymap.set("n", "<leader>pw", require("telescope").extensions.git_worktree.git_worktrees);
@@ -46,4 +47,9 @@ end)
 vim.keymap.set("n", "<leader>dw", function()
     local input = vim.fn.input('Worktree > ')
     require("git-worktree").create_worktree(input)
+end)
+
+vim.keymap.set("n", "<leader>c", function()
+    vim.cmd("!gcc -o output input")
+    vim.cmd("!./output")
 end)
