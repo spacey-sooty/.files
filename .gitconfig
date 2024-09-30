@@ -1,11 +1,15 @@
 [user]
 	name = Jade Turner
 	email = spacey-sooty@proton.me
+	signingkey = /home/jade/.ssh/id_rsa.pub
 [core]
 	editor = nvim
 [init]
 	defaultBranch = master
 [alias]
-    ac = commit -am
+    cmt = commit -s
+    ac = commit -asm
 [pull]
 	rebase = true
+[commit]
+	gpgsign = true

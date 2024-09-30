@@ -13,6 +13,12 @@ lspconfig.cssls.setup({
     single_file_support = true,
 })
 
+lspconfig.kotlin_language_server.setup({
+    capabilities = capabilities,
+    single_file_support = true,
+})
+
+
 lspconfig.tailwindcss.setup({
     capabilities = capabilities,
 })
@@ -22,10 +28,10 @@ lspconfig.gopls.setup({
     single_file_support = true,
 })
 
-lspconfig.tsserver.setup({
-    capabilities = capabilities,
-    single_file_support = true,
-})
+-- lspconfig.tsserver.setup({
+--     capabilities = capabilities,
+--     single_file_support = true,
+-- })
 
 vim.api.nvim_create_autocmd({ "FileType" }, {
     pattern = "java",
