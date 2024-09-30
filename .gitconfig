@@ -1,7 +1,7 @@
 [user]
 	name = Jade Turner
 	email = spacey-sooty@proton.me
-	signingkey = /home/jade/.ssh/id_rsa.pub
+	signingkey = /home/jade/.ssh/id_ed25519.pub
 [core]
 	editor = nvim
 [init]
@@ -13,3 +13,5 @@
 	rebase = true
 [commit]
 	gpgsign = true
+[gpg]
+	format = ssh
