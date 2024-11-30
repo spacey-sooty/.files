@@ -1,7 +1,7 @@
 [user]
 	name = Jade Turner
 	email = spacey-sooty@proton.me
-	signingKey = 6A339C474B1ED4BD
+	signingkey = 7DC9755FBE4DA20D
 [core]
 	editor = nvim
 [init]

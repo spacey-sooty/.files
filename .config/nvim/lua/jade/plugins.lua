@@ -19,6 +19,7 @@ local plugins = {
             vim.cmd.colorscheme("rose-pine-moon")
         end
     },
+    { 'wakatime/vim-wakatime', lazy = false },
     {
         "andweeb/presence.nvim",
         config = function()
