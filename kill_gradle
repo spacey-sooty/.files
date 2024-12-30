@@ -1,0 +1,4 @@
+#!/bin/bash
+
+pkill -f org\.gradle\.launcher\.daemon\.bootstrap\.GradleDaemon
+pkill -f org\.gradle\.wrapper\.GradleWrapperMain

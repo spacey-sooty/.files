@@ -13,6 +13,11 @@ lspconfig.cssls.setup({
     single_file_support = true,
 })
 
+lspconfig.vuels.setup({
+    capabilities = capabilities,
+    single_file_support = true,
+})
+
 lspconfig.kotlin_language_server.setup({
     capabilities = capabilities,
     single_file_support = true,
