@@ -1,0 +1,28 @@
+theme = "rose-pine"
+
+# Window and font sizing
+window-inherit-font-size = true
+font-size = 23
+# maximises window on startup
+window-height = 10000
+window-width = 10000
+
+# Browser based
+keybind = all:ctrl+t=new_tab
+keybind = all:ctrl+w=close_surface
+
+# Vim based
+keybind = all:ctrl+j=goto_split:bottom
+keybind = all:ctrl+k=goto_split:top
+keybind = all:ctrl+l=goto_split:right
+keybind = all:ctrl+h=goto_split:left
+keybind = all:ctrl+shift+j=resize_split:down,10
+keybind = all:ctrl+shift+k=resize_split:up,10
+keybind = all:ctrl+shift+l=resize_split:right,10
+keybind = all:ctrl+shift+h=resize_split:left,10
+
+# Inverted Vim based
+keybind = all:ctrl+alt+j=new_split:down
+keybind = all:ctrl+alt+k=new_split:up
+keybind = all:ctrl+alt+l=new_split:left
+keybind = all:ctrl+alt+h=new_split:right

@@ -12,4 +12,4 @@ vim.opt.expandtab = true
 
 vim.g.netrw_banner = 0
 vim.g.mapleader = " "
-vim.g.netrw_list_hide = vim.fn['netrw_gitignore#Hide']() .. [[,.git]]
+vim.g.netrw_list_hide = 'netrw_gitignore#Hide' .. '*.git'
