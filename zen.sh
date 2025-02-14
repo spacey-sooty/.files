@@ -1,5 +1,7 @@
-wget --show-progress https://github.com/zen-browser/desktop/releases/latest/download/zen.linux-specific.tar.bz2
-wget --show-progress https://raw.githubusercontent.com/zen-browser/branding/main/Main%20icons/PNG/zen-indigo.png
+# wget --show-progress https://github.com/zen-browser/desktop/releases/latest/download/zen.linux-specific.tar.bz2
+# wget --show-progress https://raw.githubusercontent.com/zen-browser/branding/main/Main%20icons/PNG/zen-indigo.png
+cp ~/Downloads/zen.linux-x86_64.tar.bz2 zen.linux-specific.tar.bz2
+cp ~/Downloads/zen_logo_icon_color.png zen-indigo.png
 sudo mv zen-indigo.png /opt/zen.png
 sudo tar xjf zen.linux-*.tar.bz2 -C /opt
 sudo ln -s /opt/zen/zen /usr/local/bin/zen
@@ -12,7 +14,7 @@ Exec=zen %u
 Icon=/opt/zen.png
 Type=Application
 MimeType=text/html;text/xml;application/xhtml+xml;x-scheme-handler/http;x-scheme-handler/https;application/x-xpinstall;application/pdf;application/json;
-StartupWMClass=zen-alpha
+StartupWMClass=zen-beta
 Categories=Network;WebBrowser;
 StartupNotify=true
 Terminal=false
